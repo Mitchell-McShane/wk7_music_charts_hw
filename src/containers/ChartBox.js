@@ -4,11 +4,12 @@ import ChartList from "../components/ChartList";
 const ChartBox = () => {
 
     const [music, setMusic] = useState([]);
+    const [setSelectMusicId] = useState(1);
     const [load, setLoad] = useState([false]);
 
     useEffect(() =>{
-        getMusic()
-    }, [])
+        getMusic();
+    }, [setSelectMusicId]);
 
     const getMusic = () => {
         console.log("loading music charts");
