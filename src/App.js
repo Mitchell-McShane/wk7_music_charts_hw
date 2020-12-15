@@ -1,9 +1,12 @@
-
+import React from "react";
 import './App.css';
+import ChartBox from "./containers/ChartBox";
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <div className="App">
+      <ChartBox />
+    </div>
   );
 }
 
